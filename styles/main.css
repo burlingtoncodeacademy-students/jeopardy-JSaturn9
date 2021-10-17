@@ -1,0 +1,311 @@
+/* GENERAL CSS */
+
+/* Body of page */
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(121, 13, 221); */
+    background: rgb(100,47,200);
+    background: linear-gradient(187deg, rgba(100,47,200,1) 22%, rgba(121,24,185,1) 58%, rgba(121,24,185,1) 100%);
+}
+
+/* Headers */
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* INDEX CSS */
+
+/* Border Box */
+#wrapper {
+    margin: 15px 200px;
+    border: 5px white solid;
+    border-radius: 5px;
+}
+
+/*  Subheader */
+#index-subhead {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Tourney', cursive;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#img-but-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ /* Image */
+#nicdiv {
+     display: flex;
+     justify-content: center;
+ }
+
+ #welcomepic {
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px black;
+    margin-bottom: 10px;
+}
+
+/* Start Button */
+#start-div {
+    display: flex;
+    justify-content: center;
+}
+
+#start-but {
+    margin: 20px;
+    padding: 20px 30px;
+    color: white;
+    background-color: black; 
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    animation: bounce .5s infinite alternate;
+  }
+ 
+  /* Animation to bounce start button */
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+
+
+#start-but:hover {
+    color: black;
+    background-color: white;
+    transition: background-color 0.8s ease;
+}
+
+/* Audio Player */
+#audio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+/* ROUND ONE & DOUBLE J CSS */
+
+/* Wrapper for Header, Board, Input, Guess & Pass Buttons */
+.rounds-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.rounds-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -40px;
+
+}
+
+/* Heading Image */
+.nicpic {
+    display: inline-block;
+    max-width: 145px;
+    margin: 20px 20px;
+}
+
+/* Board Container */
+.board-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding-bottom: 30px;
+    border: 5px white solid;
+    border-radius: 5px;
+    width: 80vw;
+    
+}
+
+/* Categories Container */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 35px;
+    
+}
+
+/* Category Names */
+.cat-name {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: underline;
+    margin-bottom: -10px;
+}
+
+/* Category Prices */
+a {
+    text-decoration: none;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Tourney', cursive;
+    font-size: 30px;  
+    min-width: 120px;
+    margin-bottom: -10px;
+}
+
+h3:hover {
+    color: black;
+    background-color: white;
+    transition: background-color 0.8s ease;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-round {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+}
+/* Guess & Pass Buttons */
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;   
+}
+
+button {
+    margin: 20px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 0.8s ease;
+}
+
+/* Player Stats */
+.player {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Tourney', cursive;
+    font-size: 25px;
+    margin-top: -100px;
+}
+
+/* Link to Next Round */
+.next-round-link {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding-right: 30px;
+    margin-top: -40px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h5 {
+    color: black;
+    font-size: 15px;
+}
+
+h5:hover {
+    color: white;
+}
+
+/* FINAL JEOPARDY CSS */
+
+/* Border Box Around Final Category */
+#final-wrap {
+    margin: 30px 100px;
+    border: 5px white solid;
+    border-radius: 5px;
+}
+
+/* Final Category Heading */
+#final-cat {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Final Question Text */
+#final-quest {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Tourney', cursive;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin: 0px 40px 10px 40px;
+    padding: 20px 40px;
+    line-height: 1.5;
+}
+
+/* Wrapper Around Final Forms and Bet Button */
+#form-button-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+/* Form */
+.form-fin {
+    line-height: 50px;
+}
+
+/* Form Input */
+.input-fin {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+}
+
