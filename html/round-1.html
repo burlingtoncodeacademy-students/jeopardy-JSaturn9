@@ -1,173 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jeopardy</title>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,300&display=swap" rel="stylesheet" />
-  <title>Jeopardy</title>
-</head>
-
-<body>
-  <!-- div to wrap header and board -->
-  <div class="rounds-wrapper">
-    <div class="rounds-head">
-      <!-- Header image 1 -->
-      <img src="../img/nicky.png" alt="Nicolas Cage Face" title="It's Cagey Nic!" class="nicpic" />
-      <!-- Header -->
-      <h1 class="heading">ROUND ONE</h1>
-      <!-- Header image 2 -->
-      <img src="../img/nicky.png" alt="Nicolas Cage Face" title="It's Cagey Nic!" class="nicpic" />
+  <body>
+    <!-- div to wrap header and board -->
+    <div class="rounds-wrapper">
+      <div class="rounds-head">
+        <!-- Header image 1 -->
+        <img
+          src="../img/nicky.png"
+          alt="Nicolas Cage Face"
+          title="It's Cagey Nic!"
+          class="nicpic"
+        />
+        <!-- Header -->
+        <h1 class="heading">ROUND ONE</h1>
+        <!-- Header image 2 -->
+        <img
+          src="../img/nicky.png"
+          alt="Nicolas Cage Face"
+          title="It's Cagey Nic!"
+          class="nicpic"
+        />
+      </div>
+      <div id="status">
+        <button id="play-button">Play</button>
+      </div>
+      <!-- div to wrap board container -->
+      <div class="board-container">
+        <!-- Categories and prices within board -->
+        <!-- divs to wrap categories -->
+        <div class="categories">
+          <!-- Category title -->
+          <h2 class="cat-name">Movies</h2>
+          <!-- Category prices -->
+          <a href="#">
+            <h3 class="ask-question" id=0>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=1>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=2>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=3>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=4>$500</h3>
+          </a>
+        </div>
+        <div class="categories">
+          <h2 class="cat-name">Biography</h2>
+          <a href="#">
+            <h3 class="ask-question" id=5>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=6>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=7>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=8>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=9>$500</h3>
+          </a>
+        </div>
+        <div class="categories">
+          <h2 class="cat-name">Awards</h2>
+          <a href="#">
+            <h3 class="ask-question" id=10>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=11>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=12>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=13>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=14>$500</h3>
+          </a>
+        </div>
+        <div class="categories">
+          <h2 class="cat-name">Bop or Flop</h2>
+          <a href="#">
+            <h3 class="ask-question" id=15>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=16>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=17>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=18>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=19>$500</h3>
+          </a>
+        </div>
+        <div class="categories">
+          <h2 class="cat-name">Quotes</h2>
+          <a href="#">
+            <h3 class="ask-question" id=20>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=21>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=22>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=23>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=24>$500</h3>
+          </a>
+        </div>
+        <div class="categories">
+          <h2 class="cat-name">Random</h2>
+          <a href="#">
+            <h3 class="ask-question" id=25>$100</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=26>$200</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=27>$300</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=28>$400</h3>
+          </a>
+          <a href="#">
+            <h3 class="ask-question" id=29>$500</h3>
+          </a>
+        </div>
+      </div>
+      <!-- div to wrap form and buttons together -->
+      <div class="form-container">
+        <!-- Form to input answers to jeopardy questions -->
+        <div class="form">
+          <form action="">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="What is...?"
+              class="input-round"
+            />
+          </form>
+        </div>
+        <!-- Guess and Pass Buttons -->
+        <div class="button">
+          <button id="guess-button" >Guess</button>
+          <button id="pass-button" >Pass</button>
+        </div>
+      </div>
     </div>
-    <!-- div to wrap board container -->
-    <div class="board-container">
-      <!-- Categories and prices within board -->
-      <!-- divs to wrap categories -->
-      <div class="categories">
-        <!-- Category title -->
-        <h2 class="cat-name">Movies</h2>
-        <!-- Category prices -->
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
-      <div class="categories">
-        <h2 class="cat-name">Biography</h2>
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
-      <div class="categories">
-        <h2 class="cat-name">Awards</h2>
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
-      <div class="categories">
-        <h2 class="cat-name">Bop or Flop</h2>
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
-      <div class="categories">
-        <h2 class="cat-name">Quotes</h2>
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
-      <div class="categories">
-        <h2 class="cat-name">Random</h2>
-        <a href="#">
-          <h3>$100</h3>
-        </a>
-        <a href="#">
-          <h3>$200</h3>
-        </a>
-        <a href="#">
-          <h3>$300</h3>
-        </a>
-        <a href="#">
-          <h3>$400</h3>
-        </a>
-        <a href="#">
-          <h3>$500</h3>
-        </a>
-      </div>
+    <!-- Player stats -->
+    <div class="player">
+      <h4>Player 1: 0</h4>
+      <h4>Player 2: 1</h4>
     </div>
-    <!-- div to wrap form and buttons together -->
-    <div class="form-container">
-      <!-- Form to input answers to jeopardy questions -->
-      <div class="form">
-        <form action="">
-          <input type="text" name="" id="" placeholder="What is...?" class="input-round" />
-        </form>
-      </div>
-      <!-- Guess and Pass Buttons -->
-      <div class="button">
-        <button>Guess</button>
-        <button>Pass</button>
-      </div>
+    <!-- Link to next page -->
+    <div class="next-round-link">
+      <a href="round-2.html">
+        <h5>Double Jeopardy --></h5>
+      </a>
     </div>
-  </div>
-  <!-- Player stats -->
-  <div class="player">
-    <h4>Player 1: 0</h4>
-    <h4>Player 2: 1</h4>
-  </div>
-  <!-- Link to next page -->
-  <div class="next-round-link">
-    <a href="round-2.html">
-      <h5>Double Jeopardy --></h5>
-    </a>
-  </div>
-</body>
-
+  </body>
+  <script src="/scripts/round-1.js"></script>
 </html>

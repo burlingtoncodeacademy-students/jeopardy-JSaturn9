@@ -111,8 +111,20 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: -40px;
+    margin-bottom: -60px;
 
+}
+
+/* Play Button */
+#play-button {
+    margin-top: -400px;
+}
+
+/* Status - Replaces Play Button*/
+#status {
+    font-family: 'Tourney', cursive;
+    font-size: 30px;
+    color: white;
 }
 
 /* Heading Image */
