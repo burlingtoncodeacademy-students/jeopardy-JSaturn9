@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
-</head>
-<body>
-  <h1>Welcome to Jeopardy!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <!-- div to wrap entire body of page -->
+    <div id="wrapper">
+      <!-- Headings -->
+      <h1 class="heading">WELCOME TO JEOPARDY!</h1>
+      <h2 id="index-subhead"><em>Nicolas Cage Edition</em></h2>
+      <!-- div to wrap image and start button -->
+      <div id="img-but-wrapper">
+        <div id="nicdiv">
+          <img
+            src="img/welcome.jpg"
+            alt="Nicolas Cage"
+            title="Nicolas Cage"
+            id="welcomepic"
+          />
+        </div>
+        <!-- div to wrap start button -->
+        <div id="start-div">
+        
+            <button id="start-but">Start Game</button>
+        </div>
+      </div>
+      <!-- Audio player for page -->
+      <div id="audio">
+        <audio
+          src="/audio/jtheme.mp3"
+          autoplay="true"
+          loop="true"
+          controls="true"
+        ></audio>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/index.js"></script>
 </html>
